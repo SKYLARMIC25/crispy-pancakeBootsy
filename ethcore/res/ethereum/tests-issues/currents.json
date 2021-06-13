@@ -1,0 +1,54 @@
+{
+	"block": [
+		{
+			"reference": "Issue https://github.com/openethereum/openethereum/issues/11616",
+			"failing": "bcFrontierToHomestead",
+			"subtests": [
+				"blockChainFrontierWithLargerTDvsHomesteadBlockchain2_FrontierToHomesteadAt5",
+				"UncleFromFrontierInHomestead_FrontierToHomesteadAt5",
+				"UnclePopulation_FrontierToHomesteadAt5",
+				"blockChainFrontierWithLargerTDvsHomesteadBlockchain_FrontierToHomesteadAt5"
+			]
+		},
+		{
+			"reference": "Issue https://github.com/openethereum/openethereum/issues/11616",
+			"failing": "bcHomesteadToDao",
+			"subtests": [
+				"DaoTransactions_HomesteadToDaoAt5",
+				"DaoTransactions_UncleExtradata_HomesteadToDaoAt5",
+				"DaoTransactions_EmptyTransactionAndForkBlocksAhead_HomesteadToDaoAt5",
+				"DaoTransactions_XBlockm1_HomesteadToDaoAt5",
+				"HomesteadOverrideFrontier_FrontierToHomesteadAt5",
+				"CallContractThatCreateContractBeforeAndAfterSwitchover_FrontierToHomesteadAt5",
+				"ContractCreationFailsOnHomestead_FrontierToHomesteadAt5"
+			]
+		},
+		{
+			"reference": "Issue https://github.com/openethereum/openethereum/issues/11616",
+			"failing": "bcHomesteadToEIP150",
+			"subtests": [
+				"EIP150Transition_HomesteadToEIP150At5"
+			]
+		},
+		{
+			"reference": "Issue. https://github.com/openethereum/openethereum/issues/11660",
+			"failing": "bcWalletTest",
+			"subtests": [
+				"walletReorganizeOwners_Istanbul"
+			]
+		},
+		{
+			"reference": "Issue. https://github.com/openethereum/openethereum/issues/11660",
+			"failing": "bcForkStressTest",
+			"subtests": [
+				"ForkStressTest_Istanbul"
+			]
+		}
+	],
+	"state": [
+	],
+	"legacy_block": [
+	],
+	"legacy_state": [
+	]
+}
